@@ -24,13 +24,22 @@ docker pull lucas12j/scraver:latest
 2. To generate a scraver container, run the following command:
 
 ```
-docker run -ti --name scraver --hostname scraver lucas12j/scraver
+docker run -ti --name scraver --hostname scraver -p 8080:80 lucas12j/scraver
 ```
 
 ## How use:
 
-After installation, the tool will be ready to use. The official documentation is available at the following address:
-
+After installation, the tool will be ready to use. For more information, see the official Scraver documentation, available in following address:
 > http://152.67.52.155/docscraver.html
 
-### First test
+### Hello world
+
+In this first test, a request will be sent to the microservice. In this request we will collect the developer's contact data, available on the main page of the tool's documentation. 
+
+For send the request, we will use the [cUrl](https://curl.se/).
+
+``` cUrl
+
+```
+
+
