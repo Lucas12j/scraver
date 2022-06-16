@@ -1,5 +1,7 @@
 <h4 align="center"> 
     :construction:  Project in Construction  :construction:
+    <br>
+    ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=Alpha%20Version&color=GREEN&style=for-the-badge)
 </h4>
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=Alpha%20Version&color=GREEN&style=for-the-badge)
