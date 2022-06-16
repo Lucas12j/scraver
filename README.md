@@ -39,7 +39,7 @@ In this first test, a request will be sent to the microservice. In this request 
 For send the request, we will use the [cUrl](https://curl.se/).
 
 ``` cUrl
-
+curl -H "Content-Type: application/json" -X POST -d '{"url":"http://152.67.52.155/docscraver.html", "cssSelector":"#api-_footer > div:nth-child(3) > a", "dynamic":0}' http://localhost:808080
 ```
 
 
