@@ -6,7 +6,7 @@
 
 ## Description:
 
-Scraver is a dedicated tool for scraping data on the web. Was planned to be a microservice with one function, to receive the parameters of the collection and returning the clean data. It can be used to collect data on static web pages or web page with dynamic javascript.
+Scraver is a dedicated tool for scraping data on the web. Was planned to be a microservice with one function, to receive the collection parameters and returning the clean data. It can be used to collect data on static web pages or web page with dynamic javascript.
 
 ## Installation:
 
@@ -46,3 +46,8 @@ Note that the data came dirty with html tags. to clean, just add the regex param
 ``` cUrl
 curl -H "Content-Type: application/json" -X POST -d '{"url":"http://152.67.52.155/docscraver.html", "cssSelector":"#api-_footer > div:nth-child(3) > a", "dynamic":0, "regex":">(.+)<"}' http://localhost:808080
 ```
+
+### More Info:
+
+1. In the last example, a static site scrape was used. To perform a scrape on a site with dynamic javascript, it is necessary to change the "dynamic" parameter to 1.
+2. In a dynamic scrape, you can set a timeout to make sure the data has been collected correctly. Just set this time in the "sleepTime" parameter.
