@@ -15,7 +15,7 @@ Scraver is a dedicated tool for scraping data on the web. Was planned to be a mi
 ```bash
 docker build -t scraver .
 ```
-   - You can also download a scraver image ready from Docker-hub from the following command:
+   - You can also download a scraver image ready from Docker Hub from the following command:
 
 ```
 docker pull lucas12j/scraver:latest
