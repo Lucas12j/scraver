@@ -17,7 +17,7 @@ Scraver is a dedicated tool for scraping data on the web. Was planned to be a mi
 1. A Scraver docker image can be mounted using the following command:
 
 ```bash
-docker build -t scraver .
+docker build -t lucas12j/scraver .
 ```
    - You can also download a scraver image ready from Docker Hub from the following command:
 
