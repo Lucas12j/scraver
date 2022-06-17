@@ -2,7 +2,11 @@
 
 :construction:  Project in Construction  :construction:
 
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=Alpha%20Version&color=GREEN&style=for-the-badge)
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=Alpha%20Version&color=GREEN&style=for-the-badge) 
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Docker-3776AB?style=for-the-badge&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/Selenium-3776AB?style=for-the-badge&logo=selenium&logoColor=white"/>
+<img src="https://img.shields.io/badge/Firefox-3776AB?style=for-the-badge&logo=firefox&logoColor=white"/>
 
 ## Description:
 
