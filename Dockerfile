@@ -4,7 +4,7 @@ LABEL maintainer="LSS"
 
 RUN apt-get update && apt-get upgrade -y && DEBIAN_FRONTEND="noninteractive" TZ="America/Sao_Paulo" apt-get install -y tzdata && apt-get clean
 
-RUN apt-get install firefox wget python3 python3-pip -y && pip3 install flask selenium bs4 requests lxml
+RUN apt-get install firefox wget python3 python3-pip -y && pip3 install flask selenium==4.2.0 bs4 requests lxml
 
 RUN mkdir /home/api && cd /home/api && mkdir scraper && cd scraper && touch __init__.py && mkdir /driver && touch /driver/geckodriver.log
 
