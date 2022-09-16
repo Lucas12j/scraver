@@ -14,7 +14,10 @@ class ScraperS():
         self.driver.get(url)
         time.sleep(sleepTime)
         try:
-            self.value = self.driver.find_element_by_css_selector(cssSelector).get_attribute('outerHTML')
+            if isinstance(cssSelector, list):
+                self.values = [self.driver.find_element_by_css_selector(i).get_attribute('outerHTML') for i in cssSelector]
+            else:
+                self.value = self.driver.find_element_by_css_selector(cssSelector).get_attribute('outerHTML')
         except Exception as e:
             print(repr(e))
             self.cssSelectorErro = True
@@ -31,4 +34,10 @@ class ScraperS():
             return value[0],200
         elif len(value) > 1:
             return value, 200
+
+    def getValues(self):
+        if self.cssSelectorErro:
+            return "Selenium CSS Selector Error", 410
+        values = [re.findall(i[0], i[1])[0] for i in zip(self.regex, self.values)]
+        return values, 200
 
